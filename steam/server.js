@@ -28,7 +28,7 @@ app.get('*', (req, res) => {
 /**
  * Get port from environment and store in Express.
  */
-const port = portMapping.hue;
+const port = portMapping.steam;
 app.set('port', port);
 
 /**
