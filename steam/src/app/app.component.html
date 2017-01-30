@@ -1,3 +1,7 @@
 <h1>
-  {{title}}
+  {{appService.getTitle()}}
 </h1>
+<form autocomplete="off">
+  Enter new title: <input type="text" ref-someSelector [(ngModel)]="title" name="title"><br>
+  <button (click)="appService.setTitle(title)">Set title (or press enter)</button>
+</form>
