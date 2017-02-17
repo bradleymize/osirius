@@ -1,0 +1,5 @@
+<form autocomplete="off">
+  Enter new title: <input type="text" ref-someSelector [(ngModel)]="title" name="title"><br>
+  <button (click)="appService.setTitle(title)">Set title (or press enter)</button>
+  <button (click)="doSomething()">Test click binding</button>
+</form>

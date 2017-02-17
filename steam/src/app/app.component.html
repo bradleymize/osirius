@@ -1,17 +1,13 @@
 <header class="flexbox-header">{{appService.getTitle()}}</header>
 <div class="flexbox-body">
   <section class="flexbox-content">
-    <form autocomplete="off">
-      Enter new title: <input type="text" ref-someSelector [(ngModel)]="title" name="title"><br>
-      <button (click)="appService.setTitle(title)">Set title (or press enter)</button>
-      <button (click)="doSomething()">Test click binding</button>
-    </form>
+    <router-outlet></router-outlet>
   </section>
   <aside class="flexbox-nav">
     <ul>
-      <li>Menu 1</li>
-      <li>Menu 2</li>
-      <li>Menu 3</li>
+      <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/games" routerLinkActive="active">Games</a></li>
+      <li><a routerLink="/foo" routerLinkActive="active">Not Found</a></li>
     </ul>
   </aside>
   <aside class="flexbox-sidebar">Aside</aside>
