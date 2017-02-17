@@ -1,7 +1,19 @@
-<h1>
-  {{appService.getTitle()}}
-</h1>
-<form autocomplete="off">
-  Enter new title: <input type="text" ref-someSelector [(ngModel)]="title" name="title"><br>
-  <button (click)="appService.setTitle(title)">Set title (or press enter)</button>
-</form>
+<header class="flexbox-header">{{appService.getTitle()}}</header>
+<div class="flexbox-body">
+  <section class="flexbox-content">
+    <form autocomplete="off">
+      Enter new title: <input type="text" ref-someSelector [(ngModel)]="title" name="title"><br>
+      <button (click)="appService.setTitle(title)">Set title (or press enter)</button>
+      <button (click)="doSomething()">Test click binding</button>
+    </form>
+  </section>
+  <aside class="flexbox-nav">
+    <ul>
+      <li>Menu 1</li>
+      <li>Menu 2</li>
+      <li>Menu 3</li>
+    </ul>
+  </aside>
+  <aside class="flexbox-sidebar">Aside</aside>
+</div>
+<footer class="flexbox-footer">Footer</footer>
