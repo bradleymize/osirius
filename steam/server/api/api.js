@@ -6,4 +6,6 @@ router.get('/', (req, res) => {
   res.send('api works');
 });
 
+/* Get game info: http://store.steampowered.com/api/appdetails?appids=207140 */
+
 module.exports = router;
