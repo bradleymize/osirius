@@ -15,7 +15,7 @@
 }
 
 .flexbox-nav{
-  width: 100px;
+  width: 200px;
   list-style: none;
   text-align: left;
   order: -1;
@@ -24,8 +24,17 @@
 }
 
 .flexbox-sidebar{
-  width: 100px;
+  width: 200px;
   background: orange;
+  position: fixed;
+  min-height: 100vh;
+  right: 0;
+  transition: all .3s ease;
+  transform: translate3d(200px,0,0);
+}
+
+.flexbox-sidebar.open {
+  transform: translate3d(0px,0,0);
 }
 
 
