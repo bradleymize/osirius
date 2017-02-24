@@ -1,7 +1,10 @@
 <header class="flexbox-header">{{appService.getTitle()}}</header>
 <div class="flexbox-body">
   <section class="flexbox-content">
-    <router-outlet></router-outlet>
+    <div class="flexbox-main-content">
+      <router-outlet></router-outlet>
+    </div>
+    <footer class="flexbox-footer">Footer</footer>
   </section>
   <aside class="flexbox-nav">
     <ul>
@@ -12,4 +15,3 @@
   </aside>
   <aside class="flexbox-sidebar">Aside</aside>
 </div>
-<footer class="flexbox-footer">Footer</footer>
