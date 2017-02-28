@@ -1,4 +1,4 @@
-<header class="flexbox-header">{{appService.getTitle()}}</header>
+<header class="flexbox-header">{{appService.getTitle()}} <i class="fa fa-cogs fa-2x" style="float:right;" (click)="sidebarOpen=!sidebarOpen"></i></header>
 <div class="flexbox-body">
   <section class="flexbox-content">
     <div class="flexbox-main-content">
@@ -13,5 +13,5 @@
       <li><a routerLink="/foo" routerLinkActive="active">Not Found</a></li>
     </ul>
   </aside>
-  <aside class="flexbox-sidebar">Aside</aside>
+  <aside class="flexbox-sidebar" [ngClass]="{'open': sidebarOpen}">Aside</aside>
 </div>
