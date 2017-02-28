@@ -59,7 +59,14 @@
   .flexbox-body {
     flex-direction: column;
   }
-  .flexbox-nav, .flexbox-sidebar{
+  /* undo fixes from above */
+  .flexbox-content {
+    margin-left: auto;
+    width: auto;
+  }
+  .flexbox-nav {
     width: 100%;
+    height: auto;
+    position: inherit;
   }
 }
