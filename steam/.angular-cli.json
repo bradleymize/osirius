@@ -21,8 +21,10 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
+        "../node_modules/font-awesome/css/font-awesome.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
         "styles.css",
-        "../node_modules/font-awesome/css/font-awesome.css"
+        "theme-default.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

@@ -1,17 +1,20 @@
-<header class="flexbox-header">{{appService.getTitle()}} <i class="fa fa-cogs fa-2x" style="float:right;" (click)="sidebarOpen=!sidebarOpen"></i></header>
-<div class="flexbox-body">
-  <section class="flexbox-content">
+<header class="flexbox-header" id="app-header">
+  <i class="fa fa-cogs fa-2x pull-right" (click)="sidebarOpen=!sidebarOpen"></i>
+  <h1>{{appService.getTitle()}}</h1>
+</header>
+<div class="flexbox-body" id="app-body">
+  <section class="flexbox-content" id="app-content">
     <div class="flexbox-main-content">
       <router-outlet></router-outlet>
     </div>
-    <footer class="flexbox-footer">Footer</footer>
+    <footer class="flexbox-footer" id="app-footer">Footer</footer>
   </section>
-  <aside class="flexbox-nav">
+  <aside class="flexbox-nav" id="app-nav">
     <ul>
       <li><a routerLink="/" routerLinkActive="active">Home</a></li>
       <li><a routerLink="/games" routerLinkActive="active">Games</a></li>
       <li><a routerLink="/foo" routerLinkActive="active">Not Found</a></li>
     </ul>
   </aside>
-  <aside class="flexbox-sidebar" [ngClass]="{'open': sidebarOpen}">Aside</aside>
+  <aside class="flexbox-sidebar" [ngClass]="{'open': sidebarOpen}" id="app-sidebar">Aside</aside>
 </div>

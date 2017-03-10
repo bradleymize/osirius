@@ -1,0 +1,26 @@
+#app-header {
+  background: midnightblue;
+  color: white;
+}
+
+#app-body {
+  /*margin-top: match #app-header height */
+}
+
+#app-nav {
+  background: darkslateblue;
+  color: white;
+}
+
+#app-content {
+  /*margin-left: match #app-nav width */
+  background: white;
+}
+
+#app-footer {
+  background: white;
+}
+
+#app-sidebar {
+  background: lightgray;
+}
