@@ -1,0 +1,19 @@
+<ul class="topnav" [ngClass]="{'responsive': menuOpen}">
+  <li><a href="#beauter" class="brand">Brand</a></li>
+  <li><a href="#" class="active">Active</a></li>
+  <li class="dropdown">
+    <a href="#">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+    </div>
+  </li>
+  <li><a href="#">Link</a></li>
+  <li><a href="#" class="disabled">Disabled</a></li>
+  <li style="float:right;"><a href="#" >Right</a></li>
+  <li class="-icon">
+    <a>
+      <i class="fa fa-bars" aria-hidden="true" (click)="menuOpen=!menuOpen"></i>
+    </a>
+  </li>
+</ul>
