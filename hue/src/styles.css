@@ -1,26 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
 body {
   background: #43C6AC;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-/* Override beauter's container max-width property */
+/* Beauter overrides */
 .container {
   max-width: inherit;
-  background: rgba(255,255,255,0.55);
+  background: rgba(0,0,0,0.35);
+  color: #fff;
   margin-top: 35px;
 }
 
-/* Make beauter's navbar background "transparent" */
 ul.topnav {
-  /*TODO: Fix dropdown menu background*/
   background-color: inherit;
   margin-bottom: 15px;
   /*background: rgba(51,51,51,0.60);*/
 }
 
-/* utilities */
+ul.topnav .dropdown-content {
+  z-index: 1;
+}
+
+/* TODO: ul.topnav li a.active
+ * TODO: ul.topnav li a:hover
+ * TODO: ul.topnav li a.disabled:hover
+ * TODO: ul.topnav .dropdown-content (background)
+ * TODO: ul.topnav .dropdown-content a:hover
+ */
+
+/* Utilities */
 ._padding {
   padding: 5px;
 }
